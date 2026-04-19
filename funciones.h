@@ -9,7 +9,7 @@ float grado_1(float vida, float vida_rival, char nombre[], char nombre_rival[]) 
 
         switch(num) {
             case 1: {
-                int a = 2, b = 3, respuesta;
+                int a = 2, b = 4, respuesta;
                 printf("¿Cuánto es %d + %d? ", a, b);
                 scanf("%d", &respuesta);
 
@@ -22,25 +22,64 @@ float grado_1(float vida, float vida_rival, char nombre[], char nombre_rival[]) 
                 }
                 break;
             }
-            case 2:
-                printf("Ejercicio 2 pendiente\n");
+
+            case 2: {
+                int a = 2, b = 4, respuesta;
+                printf("¿Cuánto es %d - %d? ", a, b);
+                scanf("%d", &respuesta);
+
+                if(respuesta == a - b) {
+                    printf("Correcto! atacas al rival\n");
+                    vida_rival -= 20;
+                } else {
+                    printf("Incorrecto! te dañan\n");
+                    vida -= 20;
+                }
                 break;
-            case 3:
-                printf("Ejercicio 3 pendiente\n");
+            }
+
+            case 3: {
+                int a = 2, b = 4, respuesta;
+                printf("¿Cuánto es %d * %d? ", a, b);
+                scanf("%d", &respuesta);
+
+                if(respuesta == a * b) {
+                    printf("Correcto! atacas al rival\n");
+                    vida_rival -= 20;
+                } else {
+                    printf("Incorrecto! te dañan\n");
+                    vida -= 20;
+                }
                 break;
-            case 4:
-                printf("Ejercicio 4 pendiente\n");
+            }
+
+            case 4: {
+                int a = 2, b = 4, respuesta;
+                if(b == 0){
+                    b=1;
+                }
+                printf("¿Cuánto es %d / %d? ", a, b);
+                scanf("%d", &respuesta);
+
+                if(respuesta == a / b) {
+                    printf("Correcto! atacas al rival\n");
+                    vida_rival -= 20;
+                } else {
+                    printf("Incorrecto! te dañan\n");
+                    vida -= 20;
+                }
                 break;
+            }
         }
 
-        printf("Vida tuya: %.0f | Vida rival: %.0f\n", vida, vida_rival);
+        printf("\n Vida tuya: %.0f | Vida rival: %.0f\n", vida, vida_rival);
 
     } while(vida > 0 && vida_rival > 0);
 
     if(vida <= 0) {
-        printf("%s: Yo sabía que te ganaría %s\n", nombre_rival, nombre);
+        printf("\n %s: Yo sabía que te ganaría %s\n", nombre_rival, nombre);
     } else {
-        printf("%s: Me ganaste %s!\n", nombre_rival, nombre);
+        printf("\n %s: Me ganaste %s!\n", nombre_rival, nombre);
     }
 
     return vida;
