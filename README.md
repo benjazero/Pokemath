@@ -1,20 +1,82 @@
 # Pokemath
+DESCRIPCION DEL PROYECTO:
 
-El proyecto Pokemath surge debido a la baja motivación de los jóvenes hacia el aprendizaje de las matemáticas, lo que dificulta el desarrollo de sus habilidades en esta área. Por ello, se busca ofrecer una forma de estudio que sea tanto educativa como entretenida, con el fin de aumentar el interés y mejorar el aprendizaje
+Pokemath es una aplicación educativa que busca abordar la baja motivación de los jóvenes hacia el aprendizaje de las matemáticas. A través de la gamificación inspirada en la temática de Pokémon, el proyecto propone una forma interactiva y entretenida de practicar ejercicios matemáticos.
 
-Objetivos generales:
- Fomentar el interés de los jóvenes por las matemáticas mediante una herramienta educativa
- entretenida que permita mejorar sus habilidades.
-Desarrollar una forma de aprendizaje de las matemáticas que sea tanto educativa como entretenida, con el fin de aumentar la motivación de los jóvenes y fortalecer sus habilidades.
+El juego se basa en un sistema de batallas donde los usuarios deben resolver ejercicios matemáticos para atacar a su oponente, combinando aprendizaje con dinámicas propias de los videojuegos.
 
-Objetivos especificos:
+OBJETIVOS GENERALES:
 
-Diseñar un juego basado en la temática de Pokémon donde las batallas se desarrollen mediante el uso de funciones matemáticas.
-Desarrollar ejercicios matemáticos adaptados al nivel de los usuarios para fortalecer sus habilidades
-Incentivar la participación de los jóvenes mediante elementos lúdicos como recompensas, progreso y desafíos.
+Fomentar el interés de los jóvenes por las matemáticas mediante una herramienta educativa interactiva que permita mejorar sus habilidades de forma entretenida.
 
-Roles:
+OBJETIVOS ESPECIFICOS:
+
+Diseñar un juego basado en la temática de Pokémon donde las batallas se desarrollen mediante ejercicios matemáticos.
+
+Desarrollar ejercicios adaptados al nivel del usuario.
+
+Incentivar la participación mediante recompensas, progreso y desafíos.
+
+FUNCIONALIDAD DEL SISTEMA:
+
+El usuario ingresa su nombre y selecciona un nivel de dificultad.
+Luego,entrara al mundo donde se enfrenta a rivales en batallas donde el deberá resolver ejercicios matemáticos.
+
+Si responde correctamente → ataca al rival
+Si responde incorrectamente → recibe daño
+
+El combate continúa hasta que la vida de uno de los jugadores llegue a cero.
+
+NIVELES DE DIFICULTAD:
+
+Grado 1: Operaciones básicas.
+Grado 2: Operaciones intermedias. (en desarrollo)
+Grado 3: Operaciones más complejas. (en desarrollo)
+
+ESTADO DEL PROYECTO:
+
+Actualmente, el proyecto se encuentra en desarrollo utilizando el lenguaje C.
+Se ha implementado un sistema funcional de combate con ejercicios matemáticos nivel(grado1) y generación aleatoria de preguntas.
+
+TECNOLOGIA USADA:
+
+Lenguaje de programación: C
+Librerías estándar:
+stdio.h
+stdlib.h
+time.h
+
+INSTALACION Y COMPILACION:
+
+Compilación:
+
+gcc main.c funciones.c -o pokemath
+
+Ejecución:
+
+./pokemath
+
+ESTRUCTURA DEL JUEGO:
+
+main.c → Control principal del programa
+funciones.c → Lógica del juego y ejercicios
+funciones.h → Declaración de funciones
+
+ROLES:
+
 Gabriel Norambuena:
 Benjamin Vasquez:
 Benjamin Navarrete:
 Benjamin Ezquivel:
+
+IMPACTO ESPERADO:
+
+Se espera que Pokemath contribuya a mejorar la percepción de las matemáticas en los jóvenes, transformando el aprendizaje en una experiencia más dinámica, interactiva y motivadora.
+
+MEJORAS PARA EL HITO 2
+
+Implementación completa de niveles 2 y 3
+Mayor variedad de ejercicios matemáticos
+Sistema de puntuación y progreso
+Interfaz gráfica
+Incorporación de más elementos inspirados en Pokémon
