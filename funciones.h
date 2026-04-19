@@ -58,8 +58,90 @@ float grado_1(float vida, float vida_rival, char nombre[], char nombre_rival[]) 
                 if(b == 0){
                     b=1;
                 }
-                printf("¿Cuánto es %d / %d? ", a, b);
-                scanf("%d", &respuesta);
+                printf("¿Cuánto es %f / %f? ", a, b);
+                scanf("%f", &respuesta);
+
+                if(respuesta == a / b) {
+                    printf("Correcto! atacas al rival\n");
+                    vida_rival -= 20;
+                } else {
+                    printf("Incorrecto! te dañan\n");
+                    vida -= 20;
+                }
+                break;
+            }
+        }
+
+        printf("\n Vida tuya: %.0f | Vida rival: %.0f\n", vida, vida_rival);
+
+    } while(vida > 0 && vida_rival > 0);
+
+    if(vida <= 0) {
+        printf("\n %s: Yo sabía que te ganaría %s\n", nombre_rival, nombre);
+    } else {
+        printf("\n %s: Me ganaste %s!\n", nombre_rival, nombre);
+    }
+
+    return vida;
+}
+
+
+float grado_2(float vida, float vida_rival, char nombre[], char nombre_rival[]) {
+    printf("Se eligió el grado 2!\n");
+
+    do {
+        int num = rand() % 4 + 1;
+
+        switch(num) {
+            case 1: {
+                float a = 2, b = 4, respuesta;
+                printf("¿Cual es el area de un triangulo con lado %d y altura %d? ", a, b);
+                scanf("%f", &respuesta);
+
+                if(respuesta == (a * b) / 2) {
+                    printf("Correcto! atacas al rival\n");
+                    vida_rival -= 20;
+                } else {
+                    printf("Incorrecto! te dañan\n");
+                    vida -= 20;
+                }
+                break;
+            }
+
+            case 2: {
+                float a = 2, b = 4, respuesta;
+                printf("¿Cuánto es el %d %% de %d? ", a, b);
+                scanf("%f", &respuesta);
+
+                if(respuesta == (a/100) * b) {
+                    printf("Correcto! atacas al rival\n");
+                    vida_rival -= 20;
+                } else {
+                    printf("Incorrecto! te dañan\n");
+                    vida -= 20;
+                }
+                break;
+            }
+
+            case 3: {
+                float a = 2, respuesta;
+                printf("¿Cual es el valor de x en 2x-4=0?\n");
+                scanf("%f", &respuesta);
+
+                if(respuesta == a) {
+                    printf("Correcto! atacas al rival\n");
+                    vida_rival -= 20;
+                } else {
+                    printf("Incorrecto! te dañan\n");
+                    vida -= 20;
+                }
+                break;
+            }
+
+            case 4: {
+                float a = 2, b = 4, respuesta;
+                printf("¿Cuánto es %f / %f? ", a, b);
+                scanf("%f", &respuesta);
 
                 if(respuesta == a / b) {
                     printf("Correcto! atacas al rival\n");
