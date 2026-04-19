@@ -45,3 +45,5 @@ float grado_1(float vida, float vida_rival, char nombre[], char nombre_rival[]) 
 
     return vida;
 }
+
+aaaaaa
