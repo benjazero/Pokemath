@@ -1,5 +1,5 @@
 # Pokemath
-DESCRIPCION DEL PROYECTO:
+DESCRIPCIÓN DEL PROYECTO:
 
 Pokemath es una aplicación educativa que busca abordar la baja motivación de los jóvenes hacia el aprendizaje de las matemáticas. A través de la gamificación inspirada en la temática de Pokémon, el proyecto propone una forma interactiva y entretenida de practicar ejercicios matemáticos.
 
@@ -9,11 +9,11 @@ OBJETIVOS GENERALES:
 
 Fomentar el interés de los jóvenes por las matemáticas mediante una herramienta educativa interactiva que permita mejorar sus habilidades de forma entretenida.
 
-OBJETIVOS ESPECIFICOS:
+OBJETIVOS ESPECÍFICOS:
 
-Diseñar un juego basado en la temática de Pokémon donde las batallas se desarrollen mediante ejercicios matemáticos.
+Diseñar un juego basado en la temática de Pokémon/rpg donde las batallas se desarrollen mediante ejercicios matemáticos.
 
-Desarrollar ejercicios adaptados al nivel del usuario.
+Desarrollar ejercicios adaptados al nivel del usuario y mejora de interfaz.
 
 Incentivar la participación mediante recompensas, progreso y desafíos.
 
@@ -64,10 +64,21 @@ funciones.h → Declaración de funciones
 
 ROLES:
 
-Gabriel Norambuena:
-Benjamin Vasquez:
-Benjamin Navarrete:
-Benjamin Ezquivel:
+Gabriel Norambuena: programador principal
+
+Encargado de desarrollar la lógica central del juego, incluyendo el sistema de combate y la implementación de los ejercicios matemáticos.
+
+Benjamin Vasquez: Diseño de ejercicios y dificultad
+
+Encargado de crear y estructurar los ejercicios matemáticos, asegurando que se adapten a los distintos niveles de dificultad del juego.
+
+Benjamin Navarrete: Organizacion y planificacion de proyecto
+
+Responsable de coordinar el trabajo del equipo, definir objetivos, gestionar tiempos y asegurar el cumplimiento de los hitos del proyecto
+
+Benjamin Ezquivel:Documentación y presentación
+
+Responsable de la elaboración del README, informes y material de presentación, además de apoyar en la comunicación del proyecto.
 
 IMPACTO ESPERADO:
 
