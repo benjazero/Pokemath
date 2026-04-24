@@ -30,7 +30,7 @@ El combate continúa hasta que la vida de uno de los jugadores llegue a cero.
 NIVELES DE DIFICULTAD:
 
 Grado 1: Operaciones básicas.
-Grado 2: Operaciones intermedias. (en desarrollo)
+Grado 2: Operaciones intermedias.
 Grado 3: Operaciones más complejas. (en desarrollo)
 
 ESTADO DEL PROYECTO:
@@ -86,7 +86,7 @@ Se espera que Pokemath contribuya a mejorar la percepción de las matemáticas e
 
 MEJORAS PARA EL HITO 2
 
-Implementación completa de niveles 2 y 3
+Implementación completa del grado 3
 Mayor variedad de ejercicios matemáticos
 Sistema de puntuación y progreso
 Interfaz gráfica
