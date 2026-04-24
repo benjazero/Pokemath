@@ -56,6 +56,11 @@ Ejecución:
 
 ./pokemath
 
+EVIDENCIA DE AVANCE HITO 1:
+
+![Imagen](Captura de pantalla 2026-04-24 134348.png)
+
+
 ESTRUCTURA DEL JUEGO:
 
 main.c → Control principal del programa
