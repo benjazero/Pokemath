@@ -58,7 +58,7 @@ Ejecución:
 
 EVIDENCIA DE AVANCE HITO 1:
 
-![Imagen](Captura de pantalla 2026-04-24 134348.png)
+![Imagen](Captura%20de%20pantalla%202026-04-24%20134348.png)
 
 
 ESTRUCTURA DEL JUEGO:
