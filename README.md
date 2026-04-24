@@ -11,11 +11,11 @@ Fomentar el interés de los jóvenes por las matemáticas mediante una herramien
 
 OBJETIVOS ESPECÍFICOS:
 
-Diseñar un juego basado en la temática de Pokémon/rpg donde las batallas se desarrollen mediante ejercicios matemáticos.
+Diseñar un juego tipo RPG basado en la temática de Pokémon, donde las batallas se desarrollen mediante ejercicios matemáticos.
 
-Desarrollar ejercicios adaptados al nivel del usuario y mejora de interfaz.
+Desarrollar ejercicios matemáticos adaptados al nivel del usuario y mejorar la interfaz del juego para facilitar la interacción y comprensión.
 
-Incentivar la participación mediante recompensas, progreso y desafíos.
+Incentivar la participación de los usuarios mediante un sistema de recompensas, progreso y desafíos.
 
 FUNCIONALIDAD DEL SISTEMA:
 
