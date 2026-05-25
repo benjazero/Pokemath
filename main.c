@@ -66,8 +66,8 @@ void seleccionarGrado(char nombre[], char nombre_rival[]) {
             resultado = grado_2(vida, vida_rival, nombre, nombre_rival);
             break;
         case 3:
-            printf(ROJO "Grado 3 aun no implementado\n" RESET);
-            return;
+            resultado = grado_3(vida, vida_rival, nombre, nombre_rival);
+            break;
         default:
             printf(ROJO "Grado invalido\n" RESET);
             return;
