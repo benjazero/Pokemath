@@ -96,3 +96,6 @@ Mayor variedad de ejercicios matemáticos
 Sistema de puntuación y progreso
 Interfaz gráfica
 Incorporación de más elementos inspirados en Pokémon
+
+![Colores ANSI](colores-ascii.png)
+
