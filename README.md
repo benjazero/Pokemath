@@ -153,6 +153,18 @@ g++ -std=c++14 -o pokemath main.cpp Menu.cpp Combate.cpp Jugador.cpp Grado.cpp G
 
 ## EVIDENCIA DEL HITO 2 
 
+## Pantalla de inicio
+
+![Pantalla de inicio](pantalladeinicio.png)
+
+## Instrucciones
+
+![Instrucciones](instrucciones.png)
+
+## Ejemplo de batalla
+
+![Batalla](ejemplodebatalla.png)
+
 ## PROXIMOS PASOS DEL HITO 3
 Sistema de puntuación persistente entre partidas
 Mayor variedad de preguntas por grado
