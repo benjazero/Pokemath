@@ -97,5 +97,34 @@ Sistema de puntuación y progreso
 Interfaz gráfica
 Incorporación de más elementos inspirados en Pokémon
 
+cambios antes de agreagrlo a c++
+se le agrego un grado 3 que no estaba implementada een el hito 1.
+se le implemento colores ascii para tener una mejora visual en el juego:
 ![Colores ANSI](colores-ascii.png)
 
+MIGRACION DE C A C++
+
+-El Hito 1 fue desarrollado en C con tres archivos (main.c, funciones.c, funciones.h). Para el Hito 2 migramos completamente a C++ con diseño orientado a objetos.
+
+Esta migración fue realizada con apoyo de Claude (IA). Partimos del código funcional del Hito 1 y usamos la herramienta para ayudarnos a restructurarlo en clases, ya que el equipo estaba en proceso de aprender POO en C++.
+
+Las principales dificultades fueron entender cuándo usar herencia versus composición, y trabajar con `std::unique_ptr`, que no existe en C.
+
+CAMBIOS RESPECTO AL HITO 1
+ Se completó el Grado 3 que estaba pendiente.
+ Se agregaron colores ANSI para mejorar la experiencia visual.
+ Se separó la lógica en clases con responsabilidades claras.
+ El menú, la selección de grado y las instrucciones pasaron a la clase menu.
+
+ CLASES PRINCIPALES Y RELACIONES
+ Pregunta
+->PreguntaSuma, PreguntaResta, PreguntaMultiplicacion, PreguntaDivision
+->PreguntaAreaTriangulo, PreguntaPorcentaje, PreguntaEcuacionLineal, PreguntaDivisionDecimal
+->PreguntaCuadratica, PreguntaPotencia, PreguntaSistemaEcuaciones, PreguntaRaizCuadrada, PreguntaLogaritmo
+Grado
+-> Grado1 → genera preguntas de Grado 1
+-> Grado2 → genera preguntas de Grado 2
+-> Grado3 → genera preguntas de Grado 3
+Jugador→ nombre, vida, victorias
+Combate→ orquesta el loop de combate usando Jugador y Grado
+Menu→ pantalla de bienvenida, menú principal, selección de grado
