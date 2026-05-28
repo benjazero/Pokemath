@@ -2,6 +2,10 @@
 #include "Colores.h"
 #include <iostream>
 
+// Archivo que implementa las funciones de la clase Pregunta.
+// Se encarga de mostrar preguntas, recibir respuestas
+// y comprobar si son correctas.
+
 Pregunta::Pregunta()
     : respuestaCorrecta(0.0f), tolerancia(0.01f) {}
 
