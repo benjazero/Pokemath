@@ -3,6 +3,10 @@
 
 #include <string>
 
+// Clase base de las preguntas del juego.
+// Define la estructura y funciones comunes para
+// generar, mostrar y verificar ejercicios matemáticos.
+
 class Pregunta {
 protected:
     std::string enunciado;
