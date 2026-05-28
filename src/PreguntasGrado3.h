@@ -3,6 +3,10 @@
 
 #include "Pregunta.h"
 
+// Clases que representan las preguntas del Grado 3.
+// Incluyen ejercicios avanzados como ecuaciones cuadráticas,
+// potencias, sistemas, raíces y logaritmos.
+
 class PreguntaCuadratica : public Pregunta {
 private:
     int raiz1, raiz2;
