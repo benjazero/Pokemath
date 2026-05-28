@@ -2,6 +2,10 @@
 #include <cstdlib>
 #include <sstream>
 
+// Archivo que implementa las preguntas del Grado 2.
+// Genera ejercicios matemáticos intermedios
+// y calcula sus respuestas correctas.
+
 void PreguntaAreaTriangulo::generar() {
     float base   = rand() % 10 + 1;
     float altura = rand() % 10 + 1;
