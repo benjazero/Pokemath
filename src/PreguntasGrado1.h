@@ -3,6 +3,10 @@
 
 #include "Pregunta.h"
 
+// Clases que representan las preguntas del Grado 1.
+// Incluyen ejercicios básicos como suma, resta,
+// multiplicación y división.
+
 class PreguntaSuma : public Pregunta {
 public:
     void generar() override;
