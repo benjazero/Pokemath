@@ -3,9 +3,9 @@
 
 #include <string>
 
-// Esta clase administra la interfaz del juego.
-// Permite mostrar menús, pedir datos al usuario,
-// seleccionar el grado e iniciar los combates.
+// Clase encargada de controlar la interfaz del juego.
+// Gestiona los menús, la interacción con el usuario,
+// la selección de grado y el inicio de las partidas.
 
 class Menu {
 private:
