@@ -4,6 +4,10 @@
 #include <iostream>
 #include <sstream>
 
+// Archivo que implementa las preguntas del Grado 1.
+// Genera ejercicios matemáticos básicos y verifica
+// las respuestas del jugador.
+
 void PreguntaSuma::generar() {
     int a = rand() % 10 + 1;
     int b = rand() % 10 + 1;
