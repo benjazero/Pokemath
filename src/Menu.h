@@ -3,6 +3,10 @@
 
 #include <string>
 
+// Esta clase administra la interfaz del juego.
+// Permite mostrar menús, pedir datos al usuario,
+// seleccionar el grado e iniciar los combates.
+
 class Menu {
 private:
     std::string nombreJugador;
