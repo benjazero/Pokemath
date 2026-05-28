@@ -4,6 +4,10 @@
 #include <iostream>
 #include <sstream>
 
+// Archivo que implementa las preguntas del Grado 3.
+// Genera ejercicios matemáticos avanzados y
+// verifica las respuestas del jugador.
+
 void PreguntaCuadratica::generar() {
     raiz1 = rand() % 7 + 1;
     raiz2 = rand() % 7 + 1;
