@@ -7,6 +7,10 @@
 #include <iostream>
 #include <limits>
 
+// Archivo que implementa las funciones de la clase Menu.
+// Se encarga de mostrar pantallas, pedir datos al jugador,
+// manejar opciones e iniciar los combates.
+
 void Menu::limpiarPantalla() const {
 #ifdef _WIN32
     system("cls");
