@@ -1,5 +1,8 @@
 #include "Jugador.h"
 
+// Implementación de la clase Jugador, que representa al usuario y a los rivales.
+// Gestiona las estadísticas vitales como los puntos de vida y victorias.
+
 Jugador::Jugador(const std::string& nombre, float vidaMax)
     : nombre(nombre), vida(vidaMax), vidaMax(vidaMax), victorias(0) {}
 

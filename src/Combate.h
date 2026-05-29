@@ -5,6 +5,9 @@
 #include "Grado.h"
 #include <memory>
 
+// Declaración de la clase Combate y sus atributos esenciales.
+// Define la estructura del bucle de batalla, estadísticas y dependencias.
+
 class Combate {
 private:
     Jugador& jugador;

@@ -2,6 +2,9 @@
 #include "PreguntasGrado2.h"
 #include <cstdlib>
 
+// Implementación del nivel intermedio de dificultad.
+// Se encarga de generar preguntas de operaciones matemáticas intermedias.
+
 Grado2::Grado2() : Grado("Grado 2 - Intermedio", 4) {}
 
 std::unique_ptr<Pregunta> Grado2::generarPregunta() {

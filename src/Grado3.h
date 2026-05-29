@@ -3,6 +3,8 @@
 
 #include "Grado.h"
 
+// Define la estructura para generar operaciones matemáticas de nivel avanzado.
+
 class Grado3 : public Grado {
 public:
     Grado3();
