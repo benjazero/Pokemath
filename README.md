@@ -169,3 +169,6 @@ g++ -std=c++14 -o pokemath main.cpp Menu.cpp Combate.cpp Jugador.cpp Grado.cpp G
 Sistema de puntuación persistente entre partidas
 Mayor variedad de preguntas por grado
  Posible incorporación de elementos adicionales inspirados en Pokémon (ataques especiales, tipos, etc.)
+
+## Evidencia de avances en hito 3
+![interfaz](image.png)
