@@ -184,7 +184,6 @@ Con esta nueva versión, el usuario puede jugar Pokemath sin tener que responder
 
 ## WIDGETS UTILIZADOS:
 
-```text
 QLabel
 QLineEdit
 QComboBox
