@@ -214,19 +214,7 @@ QGroupBox.
 
 ## FUNCIONALIDAD DEL SISTEMA:
 
-El usuario ingresa el nombre del jugador, el nombre del rival y selecciona un grado de dificultad.
-
-Luego presiona el boton iniciar combate.
-
-El programa genera una pregunta matematica segun el grado seleccionado.
-
-Si responde correctamente ataca al rival.
-
-Si responde incorrectamente recibe daño.
-
-Si consigue tres respuestas correctas seguidas realiza un golpe doble.
-
-El combate termina cuando la vida de uno de los jugadores llega a cero.
+El jugador debe ingresar su nombre, el nombre del rival y elegir el grado de dificultad que quiere jugar. Después presiona el botón de iniciar combate y el programa genera una pregunta matemática según el grado seleccionado. Si responde correctamente, le hace daño al rival, pero si responde incorrectamente recibe daño. Además, si logra responder tres preguntas seguidas de forma correcta, realiza un golpe doble. El combate termina cuando la vida del jugador o la del rival llega a cero.
 
 ## CAMBIOS EN EL CODIGO:
 
