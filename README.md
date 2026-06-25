@@ -170,7 +170,7 @@ Sistema de puntuación persistente entre partidas
 Mayor variedad de preguntas por grado
  Posible incorporación de elementos adicionales inspirados en Pokémon (ataques especiales, tipos, etc.)
 
-IMPLEMENTACION HITO 3:
+## IMPLEMENTACION HITO 3:
 
 Para el Hito 3 se implemento una interfaz grafica basica para Pokemath utilizando Qt Creator y Qt Designer.
 
