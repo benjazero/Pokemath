@@ -170,38 +170,84 @@ Sistema de puntuación persistente entre partidas
 Mayor variedad de preguntas por grado
  Posible incorporación de elementos adicionales inspirados en Pokémon (ataques especiales, tipos, etc.)
 
-# HITO 3: IMPLEMENTACIÓN DE INTERFAZ GRÁFICA EN QT
+IMPLEMENTACION HITO 3:
 
-Para el Hito 3 se implementó una interfaz gráfica básica para Pokemath utilizando Qt Creator, Qt Designer y Qt Widgets.
+Para el Hito 3 se implemento una interfaz grafica basica para Pokemath utilizando Qt Creator y Qt Designer.
 
-La interfaz fue creada usando principalmente widgets arrastrables desde Qt Designer. De esta forma se organizó visualmente la ventana antes de conectarla con el código en C++.
+La interfaz fue realizada con widgets arrastrables y permite jugar sin utilizar la consola.
 
-## OBJETIVO DEL HITO 3:
+CAMBIOS REALIZADOS:
 
-El objetivo de este hito fue transformar la interacción del juego que funcionaba por consola en una interfaz gráfica más clara, visual y fácil de utilizar.
+Se creo una interfaz grafica para el juego.
 
-Con esta nueva versión, el usuario puede jugar Pokemath sin tener que responder preguntas directamente desde la terminal.
+Se agregaron campos para ingresar el nombre del jugador y rival.
 
-## WIDGETS UTILIZADOS:
+Se agrego un selector para elegir el grado de dificultad.
 
-QLabel
+Se agregaron barras de vida para el jugador y rival.
 
-QLineEdit
+Se agrego un espacio donde aparece la pregunta matematica.
 
-QComboBox
+Se agrego un campo para ingresar la respuesta.
 
-QPushButton
+Se agrego un segundo campo de respuesta para los sistemas de ecuaciones.
 
-QProgressBar
+Se agrego un historial de batalla.
 
-QTextEdit
+Se agrego una ventana emergente al finalizar el combate.
 
-QGroupBox
+WIDGETS UTILIZADOS:
 
-QVBoxLayout
+QLabel.
 
-QHBoxLayout
+QLineEdit.
 
+QComboBox.
+
+QPushButton.
+
+QProgressBar.
+
+QTextEdit.
+
+QGroupBox.
+
+FUNCIONALIDAD DEL SISTEMA:
+
+El usuario ingresa el nombre del jugador, el nombre del rival y selecciona un grado de dificultad.
+
+Luego presiona el boton iniciar combate.
+
+El programa genera una pregunta matematica segun el grado seleccionado.
+
+Si responde correctamente ataca al rival.
+
+Si responde incorrectamente recibe daño.
+
+Si consigue tres respuestas correctas seguidas realiza un golpe doble.
+
+El combate termina cuando la vida de uno de los jugadores llega a cero.
+
+CAMBIOS EN EL CODIGO:
+
+Se agregaron los archivos:
+
+mainwindow.h
+mainwindow.cpp
+mainwindow.ui
+CMakeLists.txt
+
+La clase MainWindow se encarga de controlar la interfaz grafica y el combate.
+
+Tambien se agregaron funciones en la clase Pregunta para verificar las respuestas desde Qt sin utilizar la consola.
+
+virtual int cantidadRespuestas() const;
+virtual bool verificarRespuestas(float respuesta1, float respuesta2 = 0.0f) const;
+COMPILACION:
+
+El proyecto se compila desde Qt Creator utilizando CMake.
+
+Para ejecutar el proyecto se debe abrir el archivo CMakeLists.txt, seleccionar el kit de Qt, configurar el proyecto y presionar Run.
 
 ## Evidencia de avances en hito 3
 ![interfaz](image.png)
