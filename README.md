@@ -185,14 +185,23 @@ Con esta nueva versión, el usuario puede jugar Pokemath sin tener que responder
 ## WIDGETS UTILIZADOS:
 
 QLabel
+
 QLineEdit
+
 QComboBox
+
 QPushButton
+
 QProgressBar
+
 QTextEdit
+
 QGroupBox
+
 QVBoxLayout
+
 QHBoxLayout
+
 
 ## Evidencia de avances en hito 3
 ![interfaz](image.png)
