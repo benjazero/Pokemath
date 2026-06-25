@@ -176,7 +176,7 @@ Para el Hito 3 se implemento una interfaz grafica basica para Pokemath utilizand
 
 La interfaz fue realizada con widgets arrastrables y permite jugar sin utilizar la consola.
 
-CAMBIOS REALIZADOS:
+## CAMBIOS REALIZADOS:
 
 Se creo una interfaz grafica para el juego.
 
@@ -196,7 +196,7 @@ Se agrego un historial de batalla.
 
 Se agrego una ventana emergente al finalizar el combate.
 
-WIDGETS UTILIZADOS:
+## WIDGETS UTILIZADOS:
 
 QLabel.
 
@@ -212,7 +212,7 @@ QTextEdit.
 
 QGroupBox.
 
-FUNCIONALIDAD DEL SISTEMA:
+## FUNCIONALIDAD DEL SISTEMA:
 
 El usuario ingresa el nombre del jugador, el nombre del rival y selecciona un grado de dificultad.
 
@@ -228,7 +228,7 @@ Si consigue tres respuestas correctas seguidas realiza un golpe doble.
 
 El combate termina cuando la vida de uno de los jugadores llega a cero.
 
-CAMBIOS EN EL CODIGO:
+## CAMBIOS EN EL CODIGO:
 
 Se agregaron los archivos:
 
