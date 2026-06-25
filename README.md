@@ -170,5 +170,30 @@ Sistema de puntuación persistente entre partidas
 Mayor variedad de preguntas por grado
  Posible incorporación de elementos adicionales inspirados en Pokémon (ataques especiales, tipos, etc.)
 
+# HITO 3: IMPLEMENTACIÓN DE INTERFAZ GRÁFICA EN QT
+
+Para el Hito 3 se implementó una interfaz gráfica básica para Pokemath utilizando Qt Creator, Qt Designer y Qt Widgets.
+
+La interfaz fue creada usando principalmente widgets arrastrables desde Qt Designer. De esta forma se organizó visualmente la ventana antes de conectarla con el código en C++.
+
+## OBJETIVO DEL HITO 3:
+
+El objetivo de este hito fue transformar la interacción del juego que funcionaba por consola en una interfaz gráfica más clara, visual y fácil de utilizar.
+
+Con esta nueva versión, el usuario puede jugar Pokemath sin tener que responder preguntas directamente desde la terminal.
+
+## WIDGETS UTILIZADOS:
+
+```text
+QLabel
+QLineEdit
+QComboBox
+QPushButton
+QProgressBar
+QTextEdit
+QGroupBox
+QVBoxLayout
+QHBoxLayout
+
 ## Evidencia de avances en hito 3
 ![interfaz](image.png)
