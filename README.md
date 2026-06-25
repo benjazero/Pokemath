@@ -218,24 +218,20 @@ El jugador debe ingresar su nombre, el nombre del rival y elegir el grado de dif
 
 ## CAMBIOS EN EL CODIGO:
 
-Se agregaron los archivos:
+Para implementar la interfaz gráfica se agregaron los archivos `mainwindow.h`, `mainwindow.cpp`, `mainwindow.ui` y `CMakeLists.txt`.
 
-mainwindow.h
-mainwindow.cpp
-mainwindow.ui
-CMakeLists.txt
+La clase `MainWindow` se encarga de controlar la interfaz gráfica del juego, como los botones, las barras de vida, las preguntas y el historial de batalla. También permite iniciar el combate y verificar las respuestas del jugador.
 
-La clase MainWindow se encarga de controlar la interfaz grafica y el combate.
+Además, se agregaron funciones en la clase `Pregunta` para poder revisar las respuestas desde la interfaz de Qt, sin tener que usar la consola.
 
-Tambien se agregaron funciones en la clase Pregunta para verificar las respuestas desde Qt sin utilizar la consola.
-
+```cpp
 virtual int cantidadRespuestas() const;
 virtual bool verificarRespuestas(float respuesta1, float respuesta2 = 0.0f) const;
-COMPILACION:
+```
 
-El proyecto se compila desde Qt Creator utilizando CMake.
+## COMPILACION:
 
-Para ejecutar el proyecto se debe abrir el archivo CMakeLists.txt, seleccionar el kit de Qt, configurar el proyecto y presionar Run.
+El proyecto se compila desde Qt Creator utilizando CMake. Para ejecutarlo, se debe abrir el archivo `CMakeLists.txt`, seleccionar el kit de Qt, configurar el proyecto y finalmente presionar el botón Run.
 
 ## Evidencia de avances en hito 3
 ![interfaz](image.png)
