@@ -2,6 +2,9 @@
 #include "PreguntasGrado3.h"
 #include <cstdlib>
 
+// Implementación del nivel avanzado de dificultad.
+// Se encarga de generar preguntas de operaciones matemáticas complejas.
+
 Grado3::Grado3() : Grado("Grado 3 - Avanzado", 5) {}
 
 std::unique_ptr<Pregunta> Grado3::generarPregunta() {

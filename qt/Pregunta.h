@@ -3,6 +3,10 @@
 
 #include <string>
 
+// Clase base de las preguntas del juego.
+// Define la estructura y funciones comunes para
+// generar, mostrar y verificar ejercicios matemáticos.
+
 class Pregunta {
 protected:
     std::string enunciado;
@@ -15,6 +19,9 @@ public:
 
     virtual void generar() = 0;
     virtual bool hacerYVerificar() const;
+
+    virtual int cantidadRespuestas() const;
+    virtual bool verificarRespuestas(float respuesta1, float respuesta2 = 0.0f) const;
 
     std::string getEnunciado() const;
     float getRespuestaCorrecta() const;

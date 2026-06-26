@@ -5,6 +5,9 @@
 #include <memory>
 #include "Pregunta.h"
 
+// Declaración de la clase base Grado para los niveles de dificultad.
+// Define la estructura principal que generará las preguntas matemáticas.
+
 class Grado {
 protected:
     std::string nombre;

@@ -2,6 +2,9 @@
 #include "PreguntasGrado1.h"
 #include <cstdlib>
 
+// Implementación del nivel básico de dificultad.
+// Se encarga de generar preguntas de operaciones matemáticas básicas.
+
 Grado1::Grado1() : Grado("Grado 1 - Basico", 4) {}
 
 std::unique_ptr<Pregunta> Grado1::generarPregunta() {

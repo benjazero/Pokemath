@@ -1,8 +1,11 @@
 #include "PreguntasGrado3.h"
-#include "Colores.h"
 #include <cstdlib>
 #include <iostream>
 #include <sstream>
+
+// Archivo que implementa las preguntas del Grado 3.
+// Genera ejercicios matemáticos avanzados y
+// verifica las respuestas del jugador.
 
 void PreguntaCuadratica::generar() {
     raiz1 = rand() % 7 + 1;
@@ -17,11 +20,9 @@ void PreguntaCuadratica::generar() {
 }
 
 bool PreguntaCuadratica::hacerYVerificar() const {
-    std::cout << AMARILLO << "\n" << enunciado << " " << RESET;
     float respuesta;
     std::cin >> respuesta;
     if (esCorrecta(respuesta)) return true;
-    std::cout << ROJO << "Incorrecto! Las raices eran " << raiz1 << " y " << raiz2 << "\n" << RESET;
     return false;
 }
 
@@ -54,18 +55,25 @@ void PreguntaSistemaEcuaciones::generar() {
 }
 
 bool PreguntaSistemaEcuaciones::hacerYVerificar() const {
-    std::cout << AMARILLO << "\n" << enunciado << "\n" << RESET;
     float rx, ry;
-    std::cout << AMARILLO << "Ingresa x: " << RESET;
     std::cin >> rx;
-    std::cout << AMARILLO << "Ingresa y: " << RESET;
     std::cin >> ry;
     bool xOk = rx >= solX - tolerancia && rx <= solX + tolerancia;
     bool yOk = ry >= solY - tolerancia && ry <= solY + tolerancia;
     if (xOk && yOk) return true;
-    std::cout << ROJO << "Incorrecto! La solucion era x=" << static_cast<int>(solX)
-              << ", y=" << static_cast<int>(solY) << "\n" << RESET;
     return false;
+}
+
+int PreguntaSistemaEcuaciones::cantidadRespuestas() const {
+    return 2;
+}
+
+bool PreguntaSistemaEcuaciones::verificarRespuestas(float respuestaX, float respuestaY) const {
+    bool xCorrecta = respuestaX >= solX - tolerancia && respuestaX <= solX + tolerancia;
+
+    bool yCorrecta = respuestaY >= solY - tolerancia && respuestaY <= solY + tolerancia;
+
+    return xCorrecta && yCorrecta;
 }
 
 void PreguntaRaizCuadrada::generar() {

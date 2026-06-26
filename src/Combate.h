@@ -5,9 +5,6 @@
 #include "Grado.h"
 #include <memory>
 
-// Declaración de la clase Combate y sus atributos esenciales.
-// Define la estructura del bucle de batalla, estadísticas y dependencias.
-
 class Combate {
 private:
     Jugador& jugador;
@@ -15,12 +12,9 @@ private:
     Grado&   grado;
 
     static const float DANIO_POR_RONDA;
-    static const float DANIO_RACHA;
-    int rachaActual;
 
     void mostrarBarra(float vida, float vidaMax) const;
     void mostrarEstados() const;
-    void mostrarRacha() const;
 
 public:
     Combate(Jugador& jugador, Jugador& rival, Grado& grado);

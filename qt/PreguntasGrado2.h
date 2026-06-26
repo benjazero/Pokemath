@@ -3,6 +3,10 @@
 
 #include "Pregunta.h"
 
+// Clases que representan las preguntas del Grado 2.
+// Incluyen ejercicios de dificultad intermedia,
+// como porcentajes, áreas y ecuaciones lineales.
+
 class PreguntaAreaTriangulo : public Pregunta {
 public:
     void generar() override;

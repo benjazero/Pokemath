@@ -8,7 +8,7 @@ namespace Colores {
     constexpr const char* RESET    = "\033[0m";
     constexpr const char* NEGRITA  = "\033[1m";
 }
-//se agregan colores para una mejora visual al usuario y un mayor disfrute//
+
 #define ROJO     Colores::ROJO
 #define VERDE    Colores::VERDE
 #define AMARILLO Colores::AMARILLO

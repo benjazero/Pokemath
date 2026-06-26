@@ -2,14 +2,10 @@
 #include "Colores.h"
 #include <iostream>
 
-// Bucle principal de batallas de Pokemath (Jugador vs Rival).
-// Gestiona las preguntas por Grado, el daño por respuestas y la victoria.
-
 const float Combate::DANIO_POR_RONDA = 20.0f;
-const float Combate::DANIO_RACHA     = 40.0f;
 
 Combate::Combate(Jugador& jugador, Jugador& rival, Grado& grado)
-    : jugador(jugador), rival(rival), grado(grado), rachaActual(0) {}
+    : jugador(jugador), rival(rival), grado(grado) {}
 
 void Combate::mostrarBarra(float vida, float vidaMax) const {
     int bloques = static_cast<int>((vida / vidaMax) * 10);
@@ -23,7 +19,6 @@ void Combate::mostrarBarra(float vida, float vidaMax) const {
 
 void Combate::mostrarEstados() const {
     std::cout << "\n ";
-    // Alerta visual: el nombre se pinta de rojo si la vida está en un nivel crítico
     if (!jugador.estaEnPeligro()) std::cout << VERDE;
     else                          std::cout << ROJO;
     std::cout << jugador.getNombre() << " " << RESET;
@@ -38,38 +33,19 @@ void Combate::mostrarEstados() const {
     std::cout << "\n";
 }
 
-void Combate::mostrarRacha() const {
-    if (rachaActual == 2)
-        std::cout << AMARILLO << "  Racha x2! Una mas para golpe doble!\n" << RESET;
-    else if (rachaActual >= 3)
-        std::cout << AMARILLO << NEGRITA << "  RACHA x" << rachaActual << "! GOLPE DOBLE!\n" << RESET;
-}
-
 void Combate::iniciar() {
     std::cout << AMARILLO << "Comienza el combate en " << grado.getNombre() << "!\n" << RESET;
-    // Bucle principal: el enfrentamiento continúa hasta que los puntos de salud de uno lleguen a 0
+
     while (jugador.estaVivo() && rival.estaVivo()) {
         auto pregunta = grado.generarPregunta();
         bool acerto = pregunta->hacerYVerificar();
 
         if (acerto) {
-            rachaActual++;
-            mostrarRacha();
-            // Mecánica de combos: 3 o más aciertos consecutivos duplican el daño infligido
-            if (rachaActual >= 3) {
-                std::cout << VERDE << NEGRITA << "Correcto! GOLPE DOBLE! Atacas con " << DANIO_RACHA << " de danio!\n" << RESET;
-                rival.recibirDanio(DANIO_RACHA);
-            } else {
-                std::cout << VERDE << "Correcto! Atacas al rival con " << DANIO_POR_RONDA << " de danio!\n" << RESET;
-                rival.recibirDanio(DANIO_POR_RONDA);
-            }
+            std::cout << VERDE << "Correcto! Atacas al rival\n" << RESET;
+            rival.recibirDanio(DANIO_POR_RONDA);
         } else {
-            // Penalización por fallar: se reinicia el contador de combos y el jugador recibe el golpe
             std::cout << ROJO << "Incorrecto! La respuesta correcta era "
                       << pregunta->getRespuestaCorrecta() << "\n" << RESET;
-            if (rachaActual > 0)
-                std::cout << ROJO << "  Perdiste tu racha de " << rachaActual << "!\n" << RESET;
-            rachaActual = 0;
             jugador.recibirDanio(DANIO_POR_RONDA);
         }
 
@@ -91,7 +67,6 @@ void Combate::iniciar() {
 }
 
 const Jugador* Combate::obtenerGanador() const {
-    // Retorna la dirección de memoria del sobreviviente para que sepa quién ganó
     if (!jugador.estaVivo()) return &rival;
     if (!rival.estaVivo())   return &jugador;
     return nullptr;

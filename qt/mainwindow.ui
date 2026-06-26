@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupDatos">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>70</y>
+      <width>731</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Datos de la partida</string>
+    </property>
+    <widget class="QLabel" name="labelDificultad">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Dificultad :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelRival">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>30</y>
+       <width>51</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Rival :</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnIniciar">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>60</y>
+       <width>101</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Iniciar combate</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditRival">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>30</y>
+       <width>251</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Nombre</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditJugador">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>30</y>
+       <width>251</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Nombre</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelJugador">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Jugador :</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboDificultad">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>60</y>
+       <width>211</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>Grado 1 - Basico</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Grado 2 - Intermedio</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Grado 3 - Avanzado</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupPregunta">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>290</y>
+      <width>731</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Pregunta matematica</string>
+    </property>
+    <widget class="QLineEdit" name="lineEditRespuesta">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>70</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Escribe tu respuesta</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelPregunta">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>20</y>
+       <width>351</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Aqui aparecera la pregunta.</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelRespuesta">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>91</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Respuesta :</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnResponder">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>110</y>
+       <width>131</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Responder</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelRespuesta2">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>70</y>
+       <width>71</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Respuesta y :</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditRespuesta2">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>70</y>
+       <width>211</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="placeholderText">
+      <string>Valor de y</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="labelTitulo">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>10</y>
+      <width>281</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>18</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>POKEMATH</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupHistorial">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>439</y>
+      <width>731</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Historial de batalla</string>
+    </property>
+    <widget class="QTextEdit" name="textEditHistorial">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>20</y>
+       <width>731</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupEstado">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>180</y>
+      <width>731</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Estado del combate</string>
+    </property>
+    <widget class="QLabel" name="labelVidaRival">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>30</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Rival : 100 HP</string>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="progressBarRival">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>50</y>
+       <width>321</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>100</number>
+     </property>
+     <property name="textVisible">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="progressBarJugador">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>321</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>100</number>
+     </property>
+     <property name="textVisible">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="labelVidaJugador">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>30</y>
+       <width>91</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Jugador : 100 HP</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

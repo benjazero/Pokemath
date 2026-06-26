@@ -1,8 +1,11 @@
 #include "PreguntasGrado1.h"
-#include "Colores.h"
 #include <cstdlib>
 #include <iostream>
 #include <sstream>
+
+// Archivo que implementa las preguntas del Grado 1.
+// Genera ejercicios matemáticos básicos y verifica
+// las respuestas del jugador.
 
 void PreguntaSuma::generar() {
     int a = rand() % 10 + 1;
@@ -45,10 +48,8 @@ void PreguntaDivision::generar() {
 }
 
 bool PreguntaDivision::hacerYVerificar() const {
-    std::cout << AMARILLO << "\n" << enunciado << " " << RESET;
     float respuesta;
     std::cin >> respuesta;
     if (esCorrecta(respuesta)) return true;
-    std::cout << ROJO << "Incorrecto! La respuesta era " << respuestaCorrecta << "\n" << RESET;
     return false;
 }
